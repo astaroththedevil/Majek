@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%; /*10px*/
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+}
+
+.hero-shadow {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: -1;
+}
+
+.orange-color {
+    color: rgb(255, 102,0);
+}
+
+/*Nawigacja*/
+
+.navbar-brand {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+nav .navbar, nav .fa-bars {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+nav .fa-bars {
+    padding: 1rem 2rem;
+}

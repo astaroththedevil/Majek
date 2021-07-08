@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    background-color: #fff;
+    color: #fff;
+    text-align: center;
+}
+
+div {
+    width: 200px;
+    height: 100px;
+    
+}

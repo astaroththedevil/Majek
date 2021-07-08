@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #333;
+    font-family: sans-serif;
+}
+
+section {
+    display: flex;
+    /* flex-direction: row; */
+    align-items: flex-end;
+    height: 400px;
+    border: 5px solid black;
+    /* flex-direction: column; */
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-basis: 300px; */
+    width: 260px;
+    /* height: 150px; */
+    /* text-align: center; */
+    font-size: 50px;
+    border: 3px solid black;
+    background:lime;
+}
+
+.one {
+    order: 5;
+    align-self: center;
+}
+
+.two {
+    order: 3;
+    align-self: stretch;
+}
+
+.three {
+    order: 4;
+}
+
+.four {
+    order: 7;
+    align-self: flex-start;
+}
+
+.five {
+    order: 11;
+}

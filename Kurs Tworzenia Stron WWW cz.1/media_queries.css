@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ 
+body {
+    background-color: #333;color: #fff;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 100vh;
+}
+
+.square {
+    width: 300px;
+    height: 300px;
+    background-color: gold;
+}
+
+@media (min-width: 500px) {
+    .square {
+        background-color: royalblue;
+    }
+}
+
+@media (min-width: 700px) {
+    .square {
+        background-color: lime;
+    }
+}
+
+@media (min-width: 550px) and (max-width: 850px) {
+    .square {
+        width: 450px;
+    }
+}
+
+@media (min-width: 800px) {
+    body {
+        background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+    }
+}

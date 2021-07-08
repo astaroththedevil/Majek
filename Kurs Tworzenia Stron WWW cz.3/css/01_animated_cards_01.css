@@ -1,0 +1,106 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  font-family: 'Comic Neue', cursive;
+  background: radial-gradient(circle, #2b2c2e 13%, #191919 65%);
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1000px;
+}
+
+.cards .card {
+  position: relative;
+  margin: 10px;
+  height: 800px;
+  width: 50%;
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+}
+
+.cards .one {
+  background-image: url("../img/portrait-657116_1920.jpg");
+}
+
+.cards .two {
+  background-image: url("../img/man-1690965_1920.jpg");
+}
+
+.cards button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  background: none;
+  border: navajowhite;
+  color: #fff;
+  font-size: 36px;
+  text-shadow: 2px 2px 5px black;
+  cursor: crosshair;
+  z-index: 10;
+}
+
+.cards button:hover ~ .text {
+  -webkit-clip-path: circle(120% at 50% 90%);
+          clip-path: circle(120% at 50% 90%);
+}
+
+.cards .text {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 80px 30px;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  -webkit-clip-path: circle(0 at 50% 90%);
+          clip-path: circle(0 at 50% 90%);
+  -webkit-transition: -webkit-clip-path .8s;
+  transition: -webkit-clip-path .8s;
+  transition: clip-path .8s;
+  transition: clip-path .8s, -webkit-clip-path .8s;
+}
+
+.cards .text h1 {
+  color: #b6b361;
+}
+
+.cards .text h2 {
+  margin-bottom: 30px;
+  color: #8d8a8a;
+}
+/*# sourceMappingURL=01_animated_cards_01.css.map */

@@ -1,0 +1,32 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: limegreen;
+}
+
+h1 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+}
+
+button {
+    padding: 15px 25px;
+}
+
+p {
+    font-size: 24px;
+    font-weight: normal;
+    text-transform: none;
+}
+
+.new-color {
+    color: red;
+}
+

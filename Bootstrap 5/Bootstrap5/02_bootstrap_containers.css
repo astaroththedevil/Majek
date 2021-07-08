@@ -1,0 +1,12 @@
+body {
+    background-color: #333;
+    font-size: 40px;
+}
+
+.container {
+    background-color: gold;
+}
+
+.container-fluid {
+    background-color: lime;
+}

@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 36px;
+    color: #fff;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square {
+    margin: 250px;
+    width: 400px;
+    height: 400px;
+    background-color: gold;
+    border: 3px solid black;
+    animation: color 5s ease-in-out .5s infinite;
+}
+
+.square:hover {
+    animation-play-state: paused;
+}
+
+@keyframes color {
+    0% {
+        width: 400px;
+        background-color: gold;
+    }
+
+    25% {
+        border-radius: 35px;
+        background-color: green;
+        transform: rotate(45deg);
+    }
+
+    50% {
+        width: 800px;
+        background-color: royalblue;
+    }
+
+    75% {
+        border: 15px dotted yellow;
+        transform: scale(1.5);
+        transform: rotate(-90deg);
+    }
+
+    100% {
+        width: 200px;
+        background-color: lime;
+    }
+}

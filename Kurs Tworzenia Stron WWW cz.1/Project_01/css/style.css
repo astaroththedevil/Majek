@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* nawigacja*/
+.nav {
+    height: 50px;
+    background-color: #333;
+    text-align: center;
+    line-height: 50px;
+}
+
+.nav-item {
+    display: inline-block;
+}
+
+.nav-item a {
+    padding: 0 50px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: color 0.3s;
+}
+
+.nav-item a:hover {
+    color: royalblue;
+}
+
+/* header*/
+.header-img {
+    position: relative;
+    height: 300px;
+    background-image: url('/Majek/Part_1/Project_01/img/painting-81504_1920.jpg');
+    background-size: cover;
+    background-position: 0 50%;
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    z-index: 1;
+}
+
+.header-bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 3, 27, .4);
+
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.header-text p {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/*main*/
+main {
+    margin: 50px auto;
+    width: 1200px;
+}
+
+main h2 {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.about-us-box {
+    margin: 40px 0;
+    position: relative;
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.top {
+    background-image: url('../img/coffee-4334647_1920.jpg');
+}
+
+.middle {
+    background-image: url('../img/mobile-phone-1875813_1920.jpg');
+}
+
+.bottom {
+    background-image: url('../img/office-620822_1920.jpg');
+}
+
+.about-us-text {
+    position: absolute;
+    bottom: 20px;
+    padding: 20px 40px;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+}
+
+.about-us-text h3 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.about-us-text p {
+    font-weight: 400;
+}
+
+.about-us-bg {
+    position: absolute;
+    bottom: 0;
+    height: 45%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+/*footer*/
+
+footer {
+    height: 80px;
+    line-height: 80px;
+    background-color: #333;
+    color: #ddd;
+    text-align: center;
+    font-size: 20px;
+}
+
+.icon-box {
+    margin-left: 20px;
+}
+
+.icon-box a {
+    margin: 0 5px;
+    color: #ddd;
+    font-size: 30px;
+    transition: color 0.3s;
+}
+
+.icon-box a:hover {
+    color: royalblue;
+}
+
+table {
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.table-header td {
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #333;
+    background-color: antiquewhite;
+}
+
+td {
+    width: 500px;
+    padding: 30px;
+    border: 2px solid black;
+    background-color:rgb(233, 225, 219);
+}
+
+.services {
+    margin: 0 auto;
+    width: 300px;
+}
+
+.contact {
+    font-size: 36px;
+    text-align: center;
+}
+
+.contact-mobile {
+    margin-bottom: 20px;
+}
+
+.contact-mail a {
+    text-decoration: none;
+    color: initial;
+}
+
+i {
+    margin-right: 20px;
+}

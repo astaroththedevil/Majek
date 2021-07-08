@@ -1,0 +1,56 @@
+body {
+    background-color: lime;
+    position: relative;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    top: 250px;
+    margin-bottom: 50px;
+}
+
+.buttons {
+    display: flex;
+    position: relative;
+    margin: auto;
+    width: 30%;
+    top: 210px;
+}
+
+.button-multiply {
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    width: 50%;
+}
+
+.button-divide {
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    width: 50%;
+}
+
+button {
+    height: 50px;
+    width: 100%;
+    background-color: transparent;
+}
+
+.multiply:hover, .divide:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.spans {
+    position: relative;
+    top: 230px;
+    margin: auto;
+    text-align: center;
+    width: 45%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

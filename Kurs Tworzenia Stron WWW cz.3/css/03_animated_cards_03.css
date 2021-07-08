@@ -1,0 +1,221 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #333;
+  overflow: hidden;
+}
+
+.card {
+  position: relative;
+  height: 400px;
+  width: 800px;
+  border-radius: 15px;
+  overflow: hidden;
+  -webkit-animation: fade 3s;
+          animation: fade 3s;
+}
+
+.card .bg-img {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/nature-3091991_1280.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.card .girl {
+  position: absolute;
+  right: 0;
+  bottom: -400px;
+  width: 500px;
+  -webkit-animation: move 3s forwards;
+          animation: move 3s forwards;
+}
+
+.card h1 {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  font-size: 0;
+  text-transform: uppercase;
+}
+
+.card h1 span {
+  display: inline-block;
+  font-size: 50px;
+  color: #fff;
+  text-shadow: 2px 2px 5px #000;
+  -webkit-animation: rotate-heading 2s 1s linear forwards;
+          animation: rotate-heading 2s 1s linear forwards;
+  opacity: 0;
+}
+
+.card h1 span:nth-child(2) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.card h1 span:nth-child(3) {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+.card h1 span:nth-child(4) {
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+}
+
+.card h1 span:nth-child(5) {
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+
+.card h1 span:nth-child(6) {
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+}
+
+.card h1 span:nth-child(7) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.card h1 span:nth-child(8) {
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
+}
+
+.card .text {
+  position: absolute;
+  top: 111px;
+  left: 100px;
+  width: 600px;
+  height: 600px;
+  font-size: 36px;
+  color: #fff;
+  text-shadow: 2px 2px 5px #000;
+  overflow: hidden;
+}
+
+.card .text::before {
+  display: block;
+  position: absolute;
+  top: -60px;
+  left: 0;
+  content: '01/01/2000';
+  -webkit-animation: slide-text 1s 3s forwards;
+          animation: slide-text 1s 3s forwards;
+}
+
+@-webkit-keyframes move {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    bottom: 0;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+@keyframes move {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    bottom: 0;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rotate-heading {
+  from {
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+    -webkit-filter: blur(8px);
+            filter: blur(8px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@keyframes rotate-heading {
+  from {
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+    -webkit-filter: blur(8px);
+            filter: blur(8px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide-text {
+  from {
+    top: -60px;
+  }
+  to {
+    top: 10px;
+  }
+}
+
+@keyframes slide-text {
+  from {
+    top: -60px;
+  }
+  to {
+    top: 10px;
+  }
+}
+/*# sourceMappingURL=03_animated_cards_03.css.map */

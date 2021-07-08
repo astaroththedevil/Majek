@@ -1,0 +1,229 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  color: #fff;
+  background-color: #333;
+  overflow: hidden;
+}
+
+.sky {
+  position: relative;
+  height: 60vh;
+  background-color: royalblue;
+  -webkit-animation: sky 8s linear infinite;
+          animation: sky 8s linear infinite;
+}
+
+.sun {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: orange;
+  -webkit-box-shadow: 0 0 70px yellow;
+          box-shadow: 0 0 70px yellow;
+  -webkit-animation: sun 8s infinite linear;
+          animation: sun 8s infinite linear;
+}
+
+.ground {
+  position: relative;
+  bottom: 0;
+  height: 40vh;
+  background-color: #4a3535;
+}
+
+.grass {
+  position: absolute;
+  top: 0;
+  height: 200px;
+  width: 100%;
+  background-color: lime;
+}
+
+.road {
+  position: absolute;
+  top: 30px;
+  height: 120px;
+  width: 100%;
+  background-color: gray;
+}
+
+.car {
+  position: absolute;
+  top: -15px;
+  left: 200px;
+  height: 70px;
+  width: 150px;
+  background-color: tomato;
+  border-radius: 15px;
+  -webkit-animation: car 8s ease-in infinite;
+          animation: car 8s ease-in infinite;
+}
+
+.car::after, .car::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 40px;
+  height: 35px;
+  background-color: tomato;
+}
+
+.car::after {
+  right: -20px;
+  border-top-right-radius: 10px;
+}
+
+.car::before {
+  left: -20px;
+}
+
+.wheels {
+  position: absolute;
+  bottom: -10px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: black;
+  border: 2px dashed #999;
+  -webkit-animation: wheels 2s infinite linear;
+          animation: wheels 2s infinite linear;
+}
+
+.front-wheels {
+  right: 8px;
+  z-index: 1;
+}
+
+.rear-wheels {
+  left: 8px;
+}
+
+.window {
+  position: absolute;
+  top: 5px;
+  height: 30px;
+  width: 50px;
+  background-color: blue;
+}
+
+.front-window {
+  right: 0;
+  border-top-right-radius: 9px;
+}
+
+.rear-window {
+  left: 0;
+  border-top-left-radius: 9px;
+}
+
+@-webkit-keyframes sun {
+  0% {
+    top: 1200px;
+  }
+  40% {
+    top: 50px;
+  }
+  60% {
+    top: 50px;
+  }
+  100% {
+    top: 1200px;
+  }
+}
+
+@keyframes sun {
+  0% {
+    top: 1200px;
+  }
+  40% {
+    top: 50px;
+  }
+  60% {
+    top: 50px;
+  }
+  100% {
+    top: 1200px;
+  }
+}
+
+@-webkit-keyframes car {
+  from {
+    left: -500px;
+  }
+  to {
+    left: 2500px;
+  }
+}
+
+@keyframes car {
+  from {
+    left: -500px;
+  }
+  to {
+    left: 2500px;
+  }
+}
+
+@-webkit-keyframes wheels {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes wheels {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes sky {
+  0% {
+    background-color: black;
+  }
+  40% {
+    background-color: royalblue;
+  }
+  60% {
+    background-color: royalblue;
+  }
+  100% {
+    background-color: black;
+  }
+}
+
+@keyframes sky {
+  0% {
+    background-color: black;
+  }
+  40% {
+    background-color: royalblue;
+  }
+  60% {
+    background-color: royalblue;
+  }
+  100% {
+    background-color: black;
+  }
+}
+/*# sourceMappingURL=animation_advanced.css.map */
