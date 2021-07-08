@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #333;
+    overflow: hidden;
+}
+
+button {
+    position: relative;
+    margin: 20px;
+    padding: 30px 50px;
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 28px;
+    text-transform: uppercase;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+button::before, button::after {
+    display: block;
+    position: absolute;
+    content: '';
+    transition: .5s;
+    z-index: -1;
+}
+
+.slide {
+    width: 180px;
+    height: 95px;
+
+    .span1, .span2 {
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .span1 {
+        left: 50%;
+        transition: .5s;
+    }
+
+    .span2 {
+        left: -50%;
+        transition: .5s .1s;
+    }
+}
+
+.slide::after {
+    height: 100%;
+    top: 0;
+    left: -10px;
+    border-left: 2px solid #fff;
+}
+
+.slide::before {
+    width: 100px;
+    top: -10px;
+    left: 0;
+    border-top: 3px solid #fff;
+    transition-delay: .1s;
+}
+
+.slide:hover:after {
+    left: 300px;
+}
+
+.slide:hover::before {
+    top: 100px;
+}
+
+.slide:hover {
+    .span1 {
+        left: 150%;
+    }
+
+    .span2 {
+        left: 50%;
+    }
+}
