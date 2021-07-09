@@ -1,0 +1,219 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Ubuntu', sans-serif;
+  overflow: hidden;
+  color: #fff;
+  background: linear-gradient(10deg, #2483ff 60%, #2c6afb 60%);
+}
+
+nav {
+  margin-top: 100px;
+  background-color: #292929;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  font-size: 24px;
+}
+
+.menu-item {
+  display: inline-block;
+  height: 100px;
+  width: 300px;
+  line-height: 100px;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.menu-item .dropdown {
+  position: absolute;
+  width: 300px;
+}
+
+.menu-item .dropdown li {
+  display: none;
+  opacity: 0;
+  background-color: #50515a;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.menu-item .dropdown li:hover {
+  color: royalblue;
+}
+
+.menu-item:hover {
+  background-color: #363636;
+}
+
+.menu-item:hover .dropdown li {
+  display: block;
+  -webkit-animation: menu1 0.5s forwards;
+          animation: menu1 0.5s forwards;
+}
+
+.menu-item:hover .dropdown li:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.menu-item:hover .dropdown li:nth-child(3) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.menu-item:hover .dropdown li:nth-child(4) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.menu-item:hover .dropdown li:nth-child(5) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.menu-item:hover .dropdown li:nth-child(6) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+/*--------------------------------*/
+.two:hover {
+  background-color: #363636;
+}
+
+.two:hover .dropdown li {
+  display: block;
+  -webkit-animation: menu2 0.5s forwards;
+          animation: menu2 0.5s forwards;
+}
+
+/*--------------------------------*/
+.three:hover .dropdown li {
+  display: block;
+  -webkit-animation: menu3 0.5s forwards;
+          animation: menu3 0.5s forwards;
+}
+
+/*--------------------------------*/
+.four:hover .dropdown li {
+  display: block;
+  -webkit-animation: menu4 0.5s forwards;
+          animation: menu4 0.5s forwards;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+
+@-webkit-keyframes menu1 {
+  from {
+    opacity: 0;
+    -webkit-transform: rotate(36deg);
+            transform: rotate(36deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+@keyframes menu1 {
+  from {
+    opacity: 0;
+    -webkit-transform: rotate(36deg);
+            transform: rotate(36deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+@-webkit-keyframes menu2 {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(60px);
+            transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes menu2 {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(60px);
+            transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes menu3 {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateY(-60deg) translateX(60px);
+            transform: rotateY(-60deg) translateX(60px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotateY(0) translateX(0);
+            transform: rotateY(0) translateX(0);
+  }
+}
+
+@keyframes menu3 {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateY(-60deg) translateX(60px);
+            transform: rotateY(-60deg) translateX(60px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotateY(0) translateX(0);
+            transform: rotateY(0) translateX(0);
+  }
+}
+
+@-webkit-keyframes menu4 {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.8) translateY(-40px);
+            transform: scale(0.8) translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes menu4 {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.8) translateY(-40px);
+            transform: scale(0.8) translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+  }
+}
+/*# sourceMappingURL=06_menu.css.map */

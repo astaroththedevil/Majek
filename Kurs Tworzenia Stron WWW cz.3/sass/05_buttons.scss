@@ -45,7 +45,7 @@ button::after {
 	.span1,
 	.span2 {
 		position: absolute;
-		top: 50%;
+		top: 50px;
 		transform: translate(-50%, -50%);
 	}
 
@@ -68,14 +68,14 @@ button::after {
 }
 
 .slide::before {
-	width: 100px;
+	width: 100%;
 	top: -10px;
 	left: 0;
 	border-top: 3px solid #fff;
 	transition-delay: 0.1s;
 }
 
-.slide:hover:after {
+.slide:hover::after {
 	left: 300px;
 }
 
@@ -135,49 +135,48 @@ button::after {
 
 .border::after,
 .border::before {
-    width: 100%;
-    height: 100%;
+	width: 100%;
+	height: 100%;
 }
 
-
 .border::before {
-    top: 0;
-    left: 0;
+	top: 0;
+	left: 0;
 }
 
 .border::after {
-    bottom: 0;
-    right: 0;
+	bottom: 0;
+	right: 0;
 }
 
 .border:hover {
-    border: 1px solid transparent;
-    color: #13bb4b;
+	border: 1px solid transparent;
+	color: #13bb4b;
 }
 
 .border:hover:after {
-    bottom: -10px;
-    right: -10px;
-    border-bottom: 5px solid #13bb4b;
-    border-right: 5px solid #13bb4b;
+	bottom: -10px;
+	right: -10px;
+	border-bottom: 5px solid #13bb4b;
+	border-right: 5px solid #13bb4b;
 }
 
 .border:hover::before {
-    top: -10px;
-    left: -10px;
-    border-top: 5px solid #13bb4b;
-    border-left: 5px solid #13bb4b;
+	top: -10px;
+	left: -10px;
+	border-top: 5px solid #13bb4b;
+	border-left: 5px solid #13bb4b;
 }
 
 .glass::before {
-    top: -30px;
-    left: -130px;
-    height: 160%;
-    width: 100px;
-    background-image: linear-gradient(-90deg, rgba(255, 255, 255, .3), rgba(255, 255, 255, 0));
-    transform: rotate(20deg);
+	top: -30px;
+	left: -130px;
+	height: 160%;
+	width: 100px;
+	background-image: linear-gradient(-90deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+	transform: rotate(20deg);
 }
 
 .glass:hover::before {
-    left: 130%;
+	left: 130%;
 }
