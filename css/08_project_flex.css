@@ -1,7 +1,7 @@
 .wrapper {
   margin: 0 auto;
   width: 100%;
-  min-width: 1200px;
+  max-width: 1200px;
 }
 
 .white-block {
@@ -59,9 +59,42 @@
           transform-origin: left;
 }
 
+.section-heading {
+  position: relative;
+  margin-bottom: 2em;
+  font-size: 3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  color: #1755e7;
+  letter-spacing: 2px;
+}
+
+.section-padding {
+  padding: 6em 2em;
+}
+
+@media (min-width: 768px) {
+  .section-heading {
+    font-size: 3.6rem;
+  }
+  .section-padding {
+    padding: 8em 2em;
+  }
+}
+
+@media (min-width: 992px) {
+  .section-heading {
+    font-size: 4.8rem;
+  }
+  .section-padding {
+    padding: 10em 2em;
+  }
+}
+
 *,
-*::after,
-*::before {
+*::before,
+*::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
@@ -112,8 +145,8 @@ body {
   height: 3px;
   content: '';
   background-color: #fff;
-  -webkit-transition: width .3s;
-  transition: width .3s;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
 }
 
 .burger-btn__bars {
@@ -148,8 +181,8 @@ body {
   width: 100%;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-  -webkit-transition: 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition: 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+  transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
   background-image: linear-gradient(45deg, #1469f1, #2a0ab8);
   z-index: 100;
 }
@@ -178,10 +211,10 @@ body {
   -webkit-transform: scaleY(0);
           transform: scaleY(0);
   background-color: #fff;
-  -webkit-transition: -webkit-transform .3s;
-  transition: -webkit-transform .3s;
-  transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
   content: '';
 }
 
@@ -217,21 +250,27 @@ body {
           animation: navItemsAnimation 1s both;
 }
 
+.black-bars-color,
+.black-bars-color::after,
+.black-bars-color::before {
+  background-color: #2e2e2e;
+}
+
 .header {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 2em;
   height: 75vh;
   text-align: center;
@@ -270,6 +309,103 @@ body {
   background-color: #eee;
 }
 
+.dreams__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2em 0;
+}
+
+.dreams__img {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.dreams__title {
+  margin-bottom: 0.5em;
+}
+
+.dreams__text {
+  font-size: 1.4rem;
+}
+
+.hero-img {
+  position: relative;
+  padding: 10em 2em;
+  background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("../Kurs Tworzenia Stron WWW cz.3/img/polynesia-3021072_640.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+.hero-img__title {
+  font-family: 'Dancing Script', cursive;
+  margin-bottom: 0.5em;
+  font-size: 4.8rem;
+}
+
+.hero-img__text {
+  padding: 1em 0;
+}
+
+.islands__card {
+  position: relative;
+  margin: 1em 0;
+  height: 450px;
+  color: #fff;
+  text-align: center;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.islands__card-img {
+  padding: 2em;
+  height: 100%;
+  border-radius: 8px;
+  background-size: cover;
+}
+
+.islands__card-img--first {
+  background-image: linear-gradient(45deg, rgba(8, 206, 255, 0.75), rgba(8, 24, 255, 0.75)), url("../img/boat-166738_640.jpg");
+}
+
+@media (min-width: 576px) {
+  .dreams__box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .dreams__box-text {
+    width: 55%;
+  }
+  .dreams__box-text--right {
+    text-align: right;
+  }
+  .dreams__box-img {
+    width: 40%;
+  }
+  .dreams__box-img--right {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .dreams__img {
+    margin-bottom: 0;
+    max-height: 300px;
+  }
+}
+
 @media (min-width: 768px) {
   .white-block {
     height: 50px;
@@ -284,6 +420,19 @@ body {
   .header__btn {
     font-size: 1.6rem;
   }
+  .dreams__text {
+    font-size: 1.8rem;
+  }
+  .hero-img {
+    padding: 30rem 2em;
+  }
+  .hero-img hr {
+    margin: 0 auto;
+    width: 70%;
+  }
+  .hero-img__text {
+    font-size: 2.2rem;
+  }
 }
 
 @media (min-width: 992px) {
@@ -296,6 +445,42 @@ body {
   }
   .header__heading {
     font-size: 10rem;
+  }
+  .nav__item {
+    font-size: 4.8rem;
+  }
+  .dreams__box {
+    margin: 5em 0;
+  }
+  .dreams__box-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-bottom: 2.5em;
+  }
+  .dreams__title {
+    font-size: 3.6rem;
+  }
+  .dreams__text {
+    font-size: 2.2rem;
+  }
+  .hero-img {
+    padding: 40rem 2em;
+    background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("../Kurs Tworzenia Stron WWW cz.3/img/polynesia-3021072_1920.jpg");
+  }
+  .hero-img__title {
+    font-size: 7.2rem;
+  }
+  .hero-img hr {
+    width: 60%;
+    max-width: 900px;
   }
 }
 /*# sourceMappingURL=08_project_flex.css.map */
