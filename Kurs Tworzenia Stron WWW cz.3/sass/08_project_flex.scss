@@ -298,7 +298,7 @@ body {
 			&-title {
 				@include islandCardStyles;
 				top: 1.2em;
-				font-family: "Dancing Script", cursive;
+				font-family: 'Dancing Script', cursive;
 				font-size: 2.8rem;
 			}
 
@@ -336,6 +336,70 @@ body {
 	}
 }
 
+//OFFERS
+
+.offers {
+	position: relative;
+	@include heroImages('../Kurs Tworzenia Stron WWW cz.3/img/maldives-3220702_640.jpg');
+	overflow: hidden;
+
+	.section-heading {
+		color: $pure-white;
+	}
+
+	&__option {
+		margin: 1em 0;
+		box-shadow: 5px 5px 5px #2e2e2e2e;
+		background-color: $pure-white;
+		overflow: hidden;
+
+		&-img {
+			width: 100%;
+			transition: transform .3s;
+
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+
+		&-info {
+			padding: 2em;
+			background-color: $pure-white;
+			z-index: 10;
+		}
+
+		&-heading {
+			margin-bottom: 0.5em;
+			font-size: 2.4rem;
+			font-weight: 300;
+		}
+
+		&-text {
+			margin-bottom: 0.5em;
+			font-size: 1.3rem;
+			color: $dark;
+		}
+
+		&-btn {
+			margin-top: 1em;
+			padding: 0.8em;
+			width: 100%;
+			color: $pure-white;
+			background-color: $main-color;
+			border: none;
+			border-radius: 8px;
+			cursor: pointer;
+
+			&::before {
+				background-color: $secondary-color;
+			}
+		}
+	}
+
+}
+
+
+
 //MEDIA
 @media (min-width: 576px) {
 	.dreams {
@@ -363,6 +427,38 @@ body {
 		&__img {
 			margin-bottom: 0;
 			max-height: 300px;
+		}
+	}
+
+	.offers {
+		&__option {
+			display: flex;
+			margin: 2em 0;
+			width: 100%;
+
+			&-img {
+				width: 50%;
+				height: auto;
+
+				&--right {
+					order: 1;
+				}
+			}
+
+			&-info {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
+
+			&-heading {
+				margin-bottom: 0.5em;
+				font-size: 3.6rem;
+			}
+
+			&-btn {
+				padding: 1em;
+			}
 		}
 	}
 }
@@ -403,6 +499,19 @@ body {
 
 		&__text {
 			font-size: 2.2rem;
+		}
+	}
+
+	.islands {
+		&__cards {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+
+		&__card {
+			margin: 1em;
+			width: 45%;
 		}
 	}
 }
@@ -459,6 +568,30 @@ body {
 		hr {
 			width: 60%;
 			max-width: 900px;
+		}
+	}
+
+	.offers {
+		background-image: $blue-gradient, url('../Kurs\ Tworzenia\ Stron\ WWW\ cz.3/img/maldives-3220702_1920.jpg');
+
+		&__option {
+			&-img {
+				object-fit: cover;
+				height: 300px;
+			}
+
+			&-text {
+				font-size: 1.5rem;
+			}
+		}
+	}
+}
+
+
+@media (min-width: 1100px) {
+	.islands {
+		&__card {
+			width: 30%;
 		}
 	}
 }
