@@ -1,0 +1,46 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 50px;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  background-color: #333;
+  font-size: 3.6rem;
+}
+
+.wrapper {
+  margin: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: [mleko] 1fr [kokos] 1fr [banan] 1fr;
+      grid-template-columns: [mleko] 1fr [kokos] 1fr [banan] 1fr;
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+}
+
+.item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border: 1px solid lime;
+}
+
+.one {
+  grid-column: mleko/banan;
+}
+/*# sourceMappingURL=14_grid_named_grid_lines.css.map */

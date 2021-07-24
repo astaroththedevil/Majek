@@ -1,0 +1,73 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #333;
+  font-size: 3.6rem;
+}
+
+.wrapper {
+  margin: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 1fr 5fr 1fr;
+      grid-template-rows: 1fr 5fr 1fr;
+      grid-template-areas: "nav nav nav" "aside main main" "footer footer footer";
+}
+
+.item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border: 1px solid black;
+}
+
+nav {
+  background-color: cornflowerblue;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: nav;
+}
+
+main {
+  background-color: slateblue;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: main;
+}
+
+aside {
+  background-color: teal;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: aside;
+}
+
+footer {
+  background-color: gold;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: footer;
+}
+/*# sourceMappingURL=13_grid_areas.css.map */
