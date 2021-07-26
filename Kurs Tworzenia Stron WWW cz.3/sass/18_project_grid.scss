@@ -1,0 +1,31 @@
+@import './colors-grid';
+@import './animations';
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+	font-size: 1.6rem;
+    color: $white;
+    background-color: $dark;
+}
+
+// body {
+// 	font-family: 'Cinzel', serif;
+// }
+
+
+@import './small';
+@import './medium';
+@import './large';
