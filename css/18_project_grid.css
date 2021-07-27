@@ -1,3 +1,73 @@
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale();
+            transform: scale();
+    opacity: .5;
+  }
+  to {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale();
+            transform: scale();
+    opacity: .5;
+  }
+  to {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes rotate-right {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-right {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotate-left {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@keyframes rotate-left {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -147,10 +217,10 @@ h1.company-name {
   background-color: #fff;
   -webkit-transform: translateX(-102%);
           transform: translateX(-102%);
-  -webkit-transition: -webkit-transform .3s;
-  transition: -webkit-transform .3s;
-  transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
   z-index: 10;
 }
 
@@ -172,36 +242,23 @@ h1.company-name {
   color: #191919;
   text-transform: uppercase;
   text-decoration: none;
-  -webkit-transition: color .3s;
-  transition: color .3s;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 .nav__link:hover {
   color: #d6c78e;
 }
 
-.nav__link::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: '';
-  width: 100%;
-  height: 100%;
-  border: 1px solid #d6c78e;
-  opacity: 0;
-}
-
-.nav__link::before:hover::before {
-  -webkit-animation: pulse 1s;
-          animation: pulse 1s;
-}
-
 @media (min-width: 992px) {
-  .header {
+  h1.company-name {
+    font-size: 6rem;
+  }
+  .header .header {
     -ms-grid-rows: auto (1fr)[2];
         grid-template-rows: auto repeat(2, 1fr);
   }
-  .header__text {
+  .header .header__text {
     -ms-grid-row: 2;
     -ms-grid-row-span: 2;
     grid-row: 2/4;
@@ -209,10 +266,10 @@ h1.company-name {
     -ms-grid-column-span: 1;
     grid-column: 1/2;
   }
-  .header__text p {
+  .header .header__text p {
     font-size: 1.8rem;
   }
-  .header__img {
+  .header .header__img {
     -ms-grid-row: 1;
     -ms-grid-row-span: 3;
     grid-row: 1/4;
@@ -220,7 +277,7 @@ h1.company-name {
     -ms-grid-column-span: 1;
     grid-column: 2/3;
   }
-  .header__arrow {
+  .header .header__arrow {
     display: block;
     position: absolute;
     bottom: 3em;
@@ -231,7 +288,7 @@ h1.company-name {
     border: 1px solid #fff;
     border-radius: 50%;
   }
-  .header__arrow::before {
+  .header .header__arrow::before {
     position: absolute;
     top: 0;
     left: 0;
@@ -243,15 +300,15 @@ h1.company-name {
     -webkit-animation: pulse 2s infinite;
             animation: pulse 2s infinite;
   }
-  .header__arrow-icon {
+  .header .header__arrow-icon {
     width: 50px;
   }
-  .header__bg-icon-one {
+  .header .header__bg-icon-one {
     left: 6em;
     bottom: 8em;
     width: 10%;
   }
-  .header__bg-icon-two {
+  .header .header__bg-icon-two {
     display: block;
     top: 10em;
     left: 35%;
@@ -259,7 +316,7 @@ h1.company-name {
     -webkit-animation: rotate-left 55s infinite linear;
             animation: rotate-left 55s infinite linear;
   }
-  .nav {
+  .header .nav {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
@@ -268,15 +325,35 @@ h1.company-name {
     grid-row: 1/2;
     padding: 1em;
   }
-  .nav-desktop {
+  .header .nav-desktop {
     display: block;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
-  .nav__link {
+  .header .nav__link {
     color: #fff;
   }
-  .hamburger {
+  .header .nav__link::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    border: 1px solid #d6c78e;
+    opacity: 0;
+  }
+  .header .nav__link:hover::before {
+    -webkit-animation: pulse 1s;
+            animation: pulse 1s;
+  }
+  .header .hamburger {
     display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header__text p {
+    font-size: 2.2rem;
   }
 }
 /*# sourceMappingURL=18_project_grid.css.map */
