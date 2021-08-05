@@ -1,0 +1,77 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: "Open Sans", sans-serif;
+  background-color: whitesmoke;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.wrapper .comunicate {
+  display: none;
+  margin-top: 2em;
+  padding: 2em;
+  width: 70%;
+  border-radius: 1em;
+  font-size: 2.4rem;
+  text-align: center;
+  background-color: lightgray;
+  -webkit-box-shadow: 5px 5px 10px black;
+          box-shadow: 5px 5px 10px black;
+}
+
+.wrapper .thanks {
+  margin-top: 2em;
+  padding: 3em;
+  width: 70%;
+  border-radius: 1em;
+  font-size: 2.4rem;
+  text-align: center;
+  background-color: lightgray;
+  -webkit-box-shadow: 5px 5px 10px black;
+          box-shadow: 5px 5px 10px black;
+}
+
+.wrapper .vote {
+  margin-top: 1.7em;
+  padding: 1em 1em;
+  text-transform: uppercase;
+  font-size: 2rem;
+  border-radius: 10px;
+  background-color: aquamarine;
+  -webkit-box-shadow: 5px 5px 10px black;
+          box-shadow: 5px 5px 10px black;
+  cursor: pointer;
+}
+
+.wrapper .inactive {
+  display: none;
+}
+
+.wrapper .active {
+  display: block;
+}
+/*# sourceMappingURL=myexercises.css.map */
