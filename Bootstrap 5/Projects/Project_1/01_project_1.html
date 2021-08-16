@@ -1,42 +1,236 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap&subset=latin-ext" rel="stylesheet">
-    <link rel="stylesheet" href="/Projects/Project_1/01_project_1.css">
-    <title>MNX Studio</title>
-    <script src="https://kit.fontawesome.com/d3cf91491e.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap&subset=latin-ext"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./01_project_1.css">
+  <title>MNX Studio</title>
+  <script src="https://kit.fontawesome.com/d3cf91491e.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    
-    <nav class="navbar navbar-expand-lg navbar-light bg-light py-4 fixed-top">
-        <div class="container">
-            <a class="navbar-brand px-4" href="#"><i class="fas fa-camera-retro orange-color"></i> MNX Studio</a>
-        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#">Home</a>
-            <a class="nav-item nav-link" href="#aboutus">O nas</a>
-            <a class="nav-item nav-link" href="#team">Zespół</a>
-            <a class="nav-item nav-link" href="#contact">Kontakt</a>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light py-4 fixed-top">
+    <div class="container">
+      <a class="navbar-brand px-4" href="#"><i class="fas fa-camera-retro orange-color"></i> MNX Studio</a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link active" href="#">Home</a>
+          <a class="nav-item nav-link" href="#aboutus">O nas</a>
+          <a class="nav-item nav-link" href="#team">Zespół</a>
+          <a class="nav-item nav-link" href="#contact">Kontakt</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header id="home" class="">
+    <div class="hero-shadow"></div>
+    <div class="container h-100 d-flex flex-column justify-content-center align-items-center text-light text-center">
+      <p class="display-1">MNX Studio</p>
+      <p class="header-text mb-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+      <a href="#aboutus" class="btn btn-outline-light">poznaj nas</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="aboutus">
+      <div class="container py-5 about-boxes">
+        <div class="row text-center">
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="about-box m-3 p-4 p-lg-5 border">
+              <h3 class="text-dark">Jakość</h3>
+              <p class="about-icon text-dark"><i class="fas fa-check"></i></p>
+              <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, cum!</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="about-box m-3 p-4 p-lg-5 border bg-dark text-light">
+              <h3>Klienci</h3>
+              <p class="about-icon"><i class="fas fa-user-friends"></i></p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, cum!</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="about-box m-3 p-4 p-lg-5 border">
+              <h3 class="text-dark">Sprzęt</h3>
+              <p class="about-icon text-dark"><i class="fas fa-server"></i></p>
+              <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, cum!</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="about-box m-3 p-4 p-lg-5 border bg-dark text-light">
+              <h3>Ceny</h3>
+              <p class="about-icon"><i class="fas fa-dollar-sign"></i></p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, cum!</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="container about-info py-5 text-center">
+        <div class="row">
+          <div class="col">
+            <p class="display-3 orange-color">Czym się wyróżniamy?</p>
+            <hr class="mt-4 mb-5 w-50 mx-auto">
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link text-dark text-decoration-none" type="button" data-toggle="collapse"
+                      data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Najlepsze produkty
+                    </button>
+                  </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                  data-parent="#accordionExample">
+                  <div class="card-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem non veniam accusantium consectetur,
+                    expedita molestias ad iure laborum adipisci doloribus?
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed text-dark text-decoration-none" type="button"
+                      data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                      aria-controls="collapseTwo">
+                      Świetne relacje z klientami
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint iste exercitationem deserunt
+                    inventore labore quo amet optio ab quas nihil.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed text-dark text-decoration-none" type="button"
+                      data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                      aria-controls="collapseThree">
+                      Zdobywcy wielu prestiżowych nagród
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis quis hic assumenda recusandae
+                    soluta sed. Cupiditate molestiae quibusdam tempora enim.
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section id="team">
+      <div class="container text-center">
+        <p class="display-3 orange-color">Zespół</p>
+        <hr class="mt-4 mb-5 w-50 mx-auto">
+        <p class="my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nulla, voluptas et modi non quae
+          fuga alias in dolorem quasi!</p>
+        <div class="row row-cols-1 row-cols-md-2">
+          <div class="col mb-4">
+            <div class="card">
+              <img src="./img/hunger-413685_640.jpg" class="card-img-top" alt="Prezes">
+              <div class="card-body">
+                <h3 class="card-title">Prezes</h3>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+              </div>
+              <div class="card-footer row justify-content-around mx-0 py-3">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+              <img src="./img/fashion-3080644_640.jpg" class="card-img-top" alt="Marketing">
+              <div class="card-body">
+                <h3 class="card-title">Marketing</h3>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+              </div>
+              <div class="card-footer row justify-content-around mx-0 py-3">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+              <img src="./img/man-1867175_640.jpg" class="card-img-top" alt="Grafik">
+              <div class="card-body">
+                <h3 class="card-title">Grafik</h3>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                  content.</p>
+              </div>
+              <div class="card-footer row justify-content-around mx-0 py-3">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+              <img src="./img/woman-1274361_640.jpg" class="card-img-top" alt="Operator kamery">
+              <div class="card-body">
+                <h3 class="card-title">Operator kamery</h3>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+              </div>
+              <div class="card-footer row justify-content-around mx-0 py-3">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
         </div>
-      </nav>
+      </div>
+    </section>
+  </main>
 
 
 
 
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
