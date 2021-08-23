@@ -1,0 +1,37 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background: #2980b9; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #ffffff, #6dd5fa, #2980b9); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#ffffff,
+		#6dd5fa,
+		#2980b9
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.objects {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+    font-family: sans-serif;
+	font-size: 3rem;
+	color: white;
+	text-transform: uppercase;
+}
+
+p {
+    margin-top: 15em;
+}
