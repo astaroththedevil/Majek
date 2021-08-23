@@ -33,5 +33,38 @@ body {
 }
 
 p {
-    margin-top: 15em;
+    margin-top: 5em;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    margin: 1em auto;
+    font-size: 3rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    padding: 1em 2em;
+    margin: 0 2em;
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 2rem;
+}
+
+.dish {
+    border: 2px solid lightgreen;
+    padding: 1em 2em;
+    font-size: 2rem;
+    border-radius: 5px;
 }
