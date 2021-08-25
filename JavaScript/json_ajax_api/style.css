@@ -1,0 +1,35 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #2980b9; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #ffffff, #6dd5fa, #2980b9); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#ffffff,
+		#6dd5fa,
+		#2980b9
+	);
+
+}
+
+h1 {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+button {
+    padding: 1em 2em;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    background-color: transparent;
+}
