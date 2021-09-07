@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 22px;
+    font-family: sans-serif;
+    background-color: rgb(175, 175, 44);
+    overflow: hidden;
+}
+
+.wrapper {
+    height: 30vh;
+    padding: 2em;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.menu-tabs {
+    margin-bottom: 2em;
+}
+
+.menu-tab {
+    padding: 0.5em 1em;
+    font-size: 36px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #333;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.menu-tab:hover {
+    background-color: rgb(255, 236, 128);
+}
+
+.menu-tab-active {
+    background-color: gold;
+}

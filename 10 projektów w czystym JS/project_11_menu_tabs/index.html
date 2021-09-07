@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Tabs</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div class="menu-tabs">
+            <button data-id="first-tab" onclick="showInfo('first-tab')" class="menu-tab menu-tab-active">Pozycja 1</button>
+            <button data-id="second-tab" onclick="showInfo('second-tab')" class="menu-tab">Pozycja 2</button>
+            <button data-id="third-tab" onclick="showInfo('third-tab')" class="menu-tab">Pozycja 3</button>
+        </div>
+
+        <div class="menu-section" id="first-tab">
+            <h3>Sekcja 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas molestiae nemo fugit repudiandae a! Esse
+                saepe
+                illo deleniti tenetur sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, laboriosam dicta aut ratione amet consequatur magnam veniam iure mollitia repudiandae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, ipsum placeat. Quis veritatis, dolores
+                obcaecati rerum cumque consequatur vel et? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo sequi ipsam labore nostrum neque consequatur vel facilis quod odit consectetur!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure quis nisi vel id magnam! Dolorem maiores
+                quibusdam voluptates sint iusto? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ipsum labore repellat nulla perferendis, aspernatur iste iusto temporibus nobis numquam?</p>
+        </div>
+        <div class="menu-section" id="second-tab" style="display: none">
+            <h3>Sekcja 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas molestiae nemo fugit repudiandae a! Esse
+                saepe
+                illo deleniti tenetur sapiente.</p>
+        </div>
+        <div class="menu-section" id="third-tab" style="display: none">
+            <h3>Sekcja 3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas molestiae nemo fugit repudiandae a! Esse
+                saepe
+                illo deleniti tenetur sapiente.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, ipsum placeat. Quis veritatis, dolores
+                obcaecati rerum cumque consequatur vel et?</p>
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
