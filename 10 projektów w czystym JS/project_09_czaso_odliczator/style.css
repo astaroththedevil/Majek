@@ -30,7 +30,7 @@ body {
 .image-section {
     position: relative;
     height: 400px;
-    background-image: url('../project_09_czaso_odliczator/img/default.jpg');
+    background-image: url('./default.jpg');
     background-size: cover;
     background-position: center;
 }
