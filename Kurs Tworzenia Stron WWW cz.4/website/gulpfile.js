@@ -6,6 +6,17 @@ const rename = require('gulp-rename')
 const babel = require('gulp-babel')
 const uglify = require('gulp-uglify');
 const imagemin = require('gulp-imagemin')
+const imageminJpegtran = require('imagemin-jpegtran');
+
+// async function main() {
+//   const imagemin = (await import('imagemin')).default;
+//   const files = await imagemin(['images/*.{jpg,png}'], {
+//     destination: 'build/images',
+//     plugins: [imageminJpegtran()]
+//   });
+// }
+
+// main();
 
 function sassCompiler(done){
     src('./src/sass/**/*.scss')
@@ -28,11 +39,13 @@ function javaScript(done){
     done()
 }
 
-// function convertImages(done){
-//     src('./src/img/*')
-//         .pipe(imagemin())
-//         .pipe(dest('./dist/img'))
-//     done()
-// }
+function convertImages(done){
+    src('./src/img/*')
+        .pipe(imagemin())
+        .pipe(dest('./dist/img'))
+    done()
+}
 
-exports.default = series(sassCompiler, javaScript) // dodaj ", convertImages" jak rozwiążesz problem
+
+
+exports.default = series(sassCompiler, javaScript, convertImages) // dodaj ", convertImages" jak rozwiążesz problem
